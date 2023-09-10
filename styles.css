@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Outfit', sans-serif;
+    font-size: 18px;
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    height: 35em;
+    width: 20em;
+}
+.image-holder{
+    position: relative;
+    /* padding-top: 1.2em; */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2em;
+}
+.icon,.image{
+    height: 18em;
+    width: 18em;
+    border-radius: 0.6em ;
+    margin: 0 auto;
+
+
+}
+.icon{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.icon:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.icon img:hover{
+    z-index: 1;
+    opacity: 1;
+}
+.icon  img{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content{
+    margin: 0 auto;
+    width: 300px;
+    /* border: solid 2px red;     */
+}
+.content h3{
+    color: white;
+}
+.content p,.timer{
+    color: hsl(215, 51%, 70%);
+    opacity: 0.4;
+}
+.line,.creation{
+    display: flex;    
+    justify-content: space-between;
+    width:17em;
+    margin: 0 auto;
+}
+.ethereum{
+    color: hsl(178, 100%, 50%);
+    font-weight: bold;
+}
+.line img{
+    margin-right: 0.5rem;
+}
+.creation{
+    color: white;
+    font-weight: 300;
+    justify-content: space-around;
+}
+.avatar{
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    border:2px solid white;   
+    
+}
+.creation-content{
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    gap: 0.3em;
+}
+ /* hover state */
+ .content h3:hover,.name:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+ }
+

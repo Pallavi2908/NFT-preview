@@ -1,0 +1,29 @@
+@media screen and (max-width:600px){
+    *{
+        font-size: 1p8x;
+        border-radius: 10%;
+
+    }
+    .container{
+        height: 40em;
+        width: 20em;
+        gap: 1.5em;
+        padding: 1.5em;
+    }
+   
+    .image,.icon{
+        height: 17em;
+        width: 17em;
+        
+    }
+    .content{
+        width: 15em;
+    }
+    .line,.creation{
+        width:15em ;
+    }
+    .creation-content{
+        gap: 0.5em;
+    }
+    
+}
